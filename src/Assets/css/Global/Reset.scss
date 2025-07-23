@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Coral Lovers';
+  src: url('../../Fonts/CoralLoversRegular.eot');
+  src:
+    url('../../Fonts/CoralLoversRegular.eot?#iefix') format('embedded-opentype'),
+    url('../../Fonts/CoralLoversRegular.woff2') format('woff2'),
+    url('../../Fonts/CoralLoversRegular.woff') format('woff'),
+    url('../../Fonts/CoralLoversRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$primary: #04afff;
+$secondary: #0a344a;
+$textDark: #282828;
+$textLight: #333;
+$textExtraLight: #a8a8a8;
+$white: #ffffff;
+$black: #000000;
+$borderColor: #e5ebf0;
+$bgLight: #f8f8f8;
+$primaryGradient: linear-gradient(90deg, #04afff 0.23%, #58c1f1 100.26%);
+$BgPrimaryLight: rgba(4, 175, 255, 0.1);
+$LabelColor: #313131;
+$textGrey: #858585;
+:root {
+  scroll-behavior: inherit;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+}
+h1,
+h2 {
+  font-family: 'Coral Lovers';
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif;
+}
+.ff_Coral_Lovers {
+  font-family: 'Coral Lovers';
+}
+.ff_Outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  max-width: 1650px;
+}
+
+h1,
+.h1 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+h2,
+.h2 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 54px;
+  span {
+    color: $primary;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+h4,
+.h4 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+h5,
+.h5 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.242px;
+}
+
+h6,
+.h6 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+}
+p {
+  font-size: 18px;
+  color: #858585;
+  line-height: 26px;
+  font-weight: 400;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 148, 217, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primaryGradient;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fw_300 {
+  font-weight: 300 !important;
+}
+.fw_400 {
+  font-weight: 400 !important;
+}
+.fw_500 {
+  font-weight: 500 !important;
+}
+.fw_600 {
+  font-weight: 600 !important;
+}
+.fw_700 {
+  font-weight: 700 !important;
+}
+
+.fs_14 {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+.fs_16 {
+  font-size: 16px !important;
+  line-height: 22px !important;
+}
+.fs_18 {
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+.fs_20 {
+  font-size: 20px !important;
+  line-height: 26px;
+}
+.fs_22 {
+  font-size: 22px !important;
+  line-height: 28px;
+}
+.fs_24 {
+  font-size: 24px !important;
+  line-height: 32px;
+}
+.fs_26 {
+  font-size: 26px !important;
+  line-height: 34px;
+}
+.fs_28 {
+  font-size: 28px !important;
+  line-height: 38px;
+}
+.fs_30 {
+  font-size: 30px !important;
+  line-height: 42px;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: 0.5s ease;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.bg_white {
+  background: $white !important;
+}
+
+.bg_primary {
+  background: $primary !important;
+}
+
+.bg_primary_light {
+  background: $BgPrimaryLight !important;
+}
+
+.bg_secondary {
+  background: $secondary !important;
+}
+
+.bg_light {
+  background: $bgLight !important;
+}
+
+.text_primary {
+  color: $primary !important;
+}
+
+.text_secondary {
+  color: $secondary !important;
+}
+
+.text_dark {
+  color: $textDark !important;
+}
+
+.text_light {
+  color: $textLight;
+}
+.text_extra_light {
+  color: $textExtraLight;
+}
+
+.border_bottom {
+  border-bottom: 1px solid $borderColor;
+}
+
+img {
+  max-width: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
